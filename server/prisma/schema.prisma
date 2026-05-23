@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(cuid())
+  googleSub    String         @unique
+  email        String         @unique
+  name         String?
+  picture      String?
+  createdAt    DateTime       @default(now())
+  lastLoginAt  DateTime       @default(now())
+  devices      UserDevice[]
+  subscription Subscription?
+  analyses     AnalysisLog[]
+}
+
+model Device {
+  id           String        @id
+  installedAt  DateTime      @default(now())
+  trialsUsed   Int           @default(0)
+  blocked      Boolean       @default(false)
+  lastSeenAt   DateTime      @default(now())
+  userLinks    UserDevice[]
+  analyses     AnalysisLog[]
+}
+
+model UserDevice {
+  userId    String
+  deviceId  String
+  linkedAt  DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  device    Device   @relation(fields: [deviceId], references: [id], onDelete: Cascade)
+
+  @@id([userId, deviceId])
+}
+
+model Subscription {
+  id                  String   @id @default(cuid())
+  userId              String   @unique
+  productId           String
+  purchaseToken       String   @unique
+  orderId             String?
+  status              String   // active | canceled | on_hold | paused | expired
+  startTime           DateTime?
+  expiryTime          DateTime?
+  autoRenewing        Boolean  @default(false)
+  acknowledgementState Int     @default(0)
+  rawState            Json?
+  updatedAt           DateTime @updatedAt
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model AnalysisLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  deviceId   String
+  ticker     String
+  promptTokens Int?
+  completionTokens Int?
+  status     String   // success | error
+  errorCode  String?
+  createdAt  DateTime @default(now())
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  device     Device   @relation(fields: [deviceId], references: [id], onDelete: Cascade)
+
+  @@index([deviceId, createdAt])
+  @@index([userId, createdAt])
+}

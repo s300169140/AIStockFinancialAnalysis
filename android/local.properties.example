@@ -1,0 +1,16 @@
+# Copy to local.properties and fill in — NEVER commit local.properties.
+
+# Path to your Android SDK
+sdk.dir=/Users/you/Library/Android/sdk
+
+# Backend API base URL (no trailing slash)
+API_BASE_URL=https://api.your-domain.com
+
+# Google OAuth Web Client ID (from Google Cloud Console > Credentials)
+# This is the SAME web client ID configured server-side (GOOGLE_WEB_CLIENT_ID).
+# The Android OAuth client also needs to exist in the same project, but only
+# the web client ID is passed to the SDK.
+GOOGLE_WEB_CLIENT_ID=xxx.apps.googleusercontent.com
+
+# Play Billing product ID for the monthly subscription (must match Play Console)
+PRO_PRODUCT_ID=pro_monthly

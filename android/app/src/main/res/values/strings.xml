@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI Stock Analysis</string>
+
+    <string name="enter_ticker">Enter ticker (e.g. AAPL)</string>
+    <string name="analyze">Analyze</string>
+    <string name="search_tickers">Search SPY 500 + NASDAQ 100</string>
+
+    <string name="trial_remaining">%1$d of %2$d free analyses left</string>
+    <string name="trial_exhausted">You\'ve used all free analyses</string>
+    <string name="upgrade_to_pro">Upgrade to PRO</string>
+    <string name="pro_blurb">Unlimited stock analyses, cancel anytime</string>
+    <string name="pro_price">$9.99 / month</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="restore_purchases">Restore purchases</string>
+
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_required">Sign in to subscribe and sync across devices</string>
+    <string name="sign_out">Sign out</string>
+
+    <string name="error_network">Network error. Please try again.</string>
+    <string name="error_ticker_unsupported">That ticker isn\'t supported. Pick from the list.</string>
+
+    <string name="disclaimer">Not financial advice. For educational and informational use only.</string>
+</resources>
