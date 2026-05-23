@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Legacy round launcher icon for pre-API-26 devices and round shape masks.
+       Circular crop of the same composition as icon.svg. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+    <clipPath id="circle"><circle cx="256" cy="256" r="256"/></clipPath>
+  </defs>
+  <g clip-path="url(#circle)">
+    <rect x="0" y="0" width="512" height="512" fill="url(#bg)"/>
+    <path d="M0,0 L512,0 L0,512 Z" fill="#FFFFFF" opacity="0.04"/>
+    <g stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2">
+      <line x1="96"  y1="180" x2="416" y2="180"/>
+      <line x1="96"  y1="260" x2="416" y2="260"/>
+      <line x1="96"  y1="340" x2="416" y2="340"/>
+    </g>
+    <g>
+      <rect x="124" y="298" width="38" height="60" rx="6" fill="#FFFFFF" opacity="0.55"/>
+      <line x1="143" y1="278" x2="143" y2="376" stroke="#FFFFFF" stroke-width="4" opacity="0.55"/>
+      <rect x="196" y="252" width="38" height="80" rx="6" fill="#FFFFFF" opacity="0.7"/>
+      <line x1="215" y1="232" x2="215" y2="350" stroke="#FFFFFF" stroke-width="4" opacity="0.7"/>
+      <rect x="268" y="202" width="38" height="106" rx="6" fill="#FFFFFF" opacity="0.85"/>
+      <line x1="287" y1="178" x2="287" y2="326" stroke="#FFFFFF" stroke-width="4" opacity="0.85"/>
+      <rect x="340" y="148" width="38" height="140" rx="6" fill="#FFFFFF"/>
+      <line x1="359" y1="124" x2="359" y2="304" stroke="#FFFFFF" stroke-width="4"/>
+    </g>
+    <g fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="124,328 196,292 268,254 340,200 416,140"/>
+    </g>
+    <g fill="#FFFFFF">
+      <polygon points="416,140 388,128 396,156"/>
+    </g>
+    <g fill="#FFFFFF">
+      <circle cx="124" cy="328" r="9"/>
+      <circle cx="196" cy="292" r="9"/>
+      <circle cx="268" cy="254" r="9"/>
+      <circle cx="340" cy="200" r="9"/>
+    </g>
+  </g>
+</svg>
