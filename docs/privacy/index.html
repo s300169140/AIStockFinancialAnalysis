@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — AI Stock Analysis</title>
+<style>
+  :root {
+    --fg: #0b1220;
+    --muted: #4a5562;
+    --brand: #0e7d52;
+    --line: #e6eaf0;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e6eaf0; --muted: #b6bec9; --line: #1b2638; --bg: #0b1220; --brand: #1fb37c; }
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--fg); }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0; padding: 32px 20px 80px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { color: var(--brand); font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 36px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 16px; margin-top: 24px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 22px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--brand); }
+  code { background: rgba(127,127,127,.12); padding: 1px 6px; border-radius: 4px; font-size: 0.92em; }
+  footer { margin-top: 60px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">AI Stock Analysis (Android app, package <code>com.aistock.analysis</code>)</p>
+  <p class="muted">Effective date: May 24, 2026 · Last updated: May 24, 2026</p>
+
+  <h2>1. Who we are</h2>
+  <p>
+    "AI Stock Analysis" (the "App") is operated by Lennon Li ("we", "us", "our").
+    Contact: <a href="mailto:lennonli999@gmail.com">lennonli999@gmail.com</a>.
+  </p>
+
+  <h2>2. Summary</h2>
+  <p>
+    We collect the minimum data needed to run the App: a generated device ID (so we can
+    count your three free analyses), and — only if you choose to subscribe to PRO — your
+    email, name, and profile picture via Google Sign-In, plus the purchase token from
+    Google Play. We do not sell your data. We do not show ads. We do not track you across
+    other apps or websites.
+  </p>
+
+  <h2>3. Data we collect</h2>
+  <table>
+    <thead><tr><th>Category</th><th>Data</th><th>Why we collect it</th><th>How long we keep it</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Device identifier</td>
+        <td>A random UUID we generate the first time you open the App.</td>
+        <td>To enforce the 3-analysis free trial. The ID is not your IMEI, advertising ID, or any platform identifier — it's a value we created.</td>
+        <td>Until you uninstall, or 24 months of inactivity, whichever comes first.</td>
+      </tr>
+      <tr>
+        <td>Account info (PRO users only)</td>
+        <td>Google account email, display name, profile picture URL, Google subject ID.</td>
+        <td>To create your account, link your subscription, and let you restore PRO on a new device.</td>
+        <td>Until you delete your account (see Section 8).</td>
+      </tr>
+      <tr>
+        <td>Subscription data</td>
+        <td>Google Play purchase token, product ID, order ID, renewal/expiry timestamps.</td>
+        <td>To verify your subscription with Google and unlock PRO features.</td>
+        <td>For the life of the subscription plus 7 years for tax record retention.</td>
+      </tr>
+      <tr>
+        <td>Usage data</td>
+        <td>Stock ticker symbols you analyze, timestamps, and (in aggregate) tokens consumed.</td>
+        <td>To measure abuse, enforce per-user limits, and improve the App. We do not store your generated analysis text on our servers.</td>
+        <td>13 months.</td>
+      </tr>
+      <tr>
+        <td>Technical logs</td>
+        <td>IP address, request timestamps, HTTP error codes.</td>
+        <td>Security, debugging, abuse prevention.</td>
+        <td>30 days.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Data we do NOT collect</h2>
+  <ul>
+    <li>Your real name, address, or phone number (unless you choose to email us).</li>
+    <li>Location (GPS, network, or coarse).</li>
+    <li>Contacts, calendar, photos, files, microphone, or camera content.</li>
+    <li>Advertising identifiers (Android AAID).</li>
+    <li>Biometric data.</li>
+    <li>Health, financial account balances, or banking credentials.</li>
+    <li>Browser history or activity on other apps.</li>
+  </ul>
+
+  <h2>5. How we use third parties</h2>
+  <h3>5.1 Google Sign-In</h3>
+  <p>
+    When you sign in to subscribe to PRO, your Google account info is shared with us under
+    Google's terms. We request only the <em>openid</em>, <em>email</em>, and <em>profile</em>
+    scopes. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+  </p>
+  <h3>5.2 Google Play Billing</h3>
+  <p>
+    Subscriptions are processed by Google Play. Google handles your payment information
+    directly; we never see your credit card or bank details. We only receive a purchase
+    token, the order ID, and renewal/expiry timestamps.
+  </p>
+  <h3>5.3 DeepSeek (AI analysis provider)</h3>
+  <p>
+    When you request an analysis, we send the ticker symbol and a fixed prompt template
+    to <a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a>'s API
+    to generate the report. We do <strong>not</strong> send your email, name, device ID,
+    or any other identifying information to DeepSeek. The request is associated only with
+    our server-level API key.
+  </p>
+  <h3>5.4 Hosting</h3>
+  <p>
+    Our backend runs on standard cloud infrastructure. Data is encrypted in transit (TLS)
+    and at rest. We do not transfer your data to data brokers or marketers.
+  </p>
+
+  <h2>6. Children</h2>
+  <p>
+    The App is intended for users <strong>18 years and older</strong>. Investment-related
+    content is not appropriate for minors. We do not knowingly collect personal information
+    from children under 18. If you believe a minor has signed up, contact us and we will
+    delete the account.
+  </p>
+
+  <h2>7. Security</h2>
+  <p>
+    We use HTTPS/TLS for all client-server communication, hash and salt session secrets,
+    keep our database access-restricted, and apply standard security patches. No system is
+    100% secure, but we treat your data with care.
+  </p>
+
+  <h2>8. Your rights and how to delete your data</h2>
+  <p>
+    You can delete your account and all associated data by emailing us at
+    <a href="mailto:lennonli999@gmail.com?subject=Delete%20my%20account">lennonli999@gmail.com</a>
+    with the subject line <em>"Delete my account"</em> from the Google account you signed
+    in with. We will:
+  </p>
+  <ul>
+    <li>Confirm your identity (matching email).</li>
+    <li>Delete your account row, your subscription record, and all linked device data within 14 days.</li>
+    <li>Retain purchase records as required by tax law (anonymized).</li>
+  </ul>
+  <p>
+    EU/UK residents under GDPR, California residents under CCPA, and other jurisdictions
+    may have additional rights (access, portability, correction, objection). Use the same
+    email above to exercise them; we'll respond within the timeframe required by your
+    local law.
+  </p>
+
+  <h2>9. International transfers</h2>
+  <p>
+    Our servers may be located in the United States. By using the App, you understand that
+    your data may be processed in countries other than your own. We rely on standard
+    contractual clauses or equivalent safeguards for cross-border transfers where required.
+  </p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>
+    If we materially change this policy, we'll bump the "Last updated" date above. For
+    significant changes (e.g., new data categories), we'll notify you in-app before the
+    change takes effect.
+  </p>
+
+  <h2>11. Not financial advice</h2>
+  <p>
+    AI Stock Analysis is an educational and informational tool. Reports generated by the
+    App are not investment advice, do not constitute a recommendation to buy, sell, or hold
+    any security, and may contain errors. Always verify with primary sources (SEC filings,
+    company financials) and consult a licensed financial advisor before investing. Past
+    performance does not predict future returns.
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>
+    Lennon Li · <a href="mailto:lennonli999@gmail.com">lennonli999@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>This privacy policy is hosted at
+      <a href="https://s300169140.github.io/AIStockFinancialAnalysis/privacy/">
+        s300169140.github.io/AIStockFinancialAnalysis/privacy/</a>.
+      Source on <a href="https://github.com/s300169140/AIStockFinancialAnalysis">GitHub</a>.
+    </p>
+  </footer>
+</main>
+</body>
+</html>
