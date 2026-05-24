@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="540" fill="url(#header)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" fill="#FFFFFF">
+    <text x="540" y="220" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Bull vs. Bear</text>
+    <text x="540" y="320" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Analyst Debate</text>
+    <text x="540" y="420" text-anchor="middle" font-size="36" font-weight="400" opacity="0.95">See both sides of every investment thesis</text>
+  </g>
+
+  <rect x="0" y="540" width="1080" height="1380" fill="#FAFAFB"/>
+
+  <g transform="translate(60, 620)" font-family="Roboto, Arial, sans-serif">
+    <text x="0" y="60" font-size="42" font-weight="800" fill="#0B1220">8. Bull vs. Bear Debate</text>
+
+    <!-- Bull card -->
+    <rect x="0" y="100" width="960" height="500" rx="24" fill="#FFFFFF" stroke="#D7F5E6" stroke-width="3"/>
+    <circle cx="60" cy="160" r="34" fill="#1FB37C"/>
+    <text x="60" y="172" text-anchor="middle" font-size="34" font-weight="800" fill="#FFFFFF">B</text>
+    <text x="116" y="172" font-size="34" font-weight="800" fill="#0B1220">BULL CASE</text>
+
+    <text x="40" y="240" font-size="26" fill="#0B1220">
+      <tspan x="40" dy="0">"Services momentum, sticky ecosystem, and</tspan>
+      <tspan x="40" dy="38">enormous installed base set up multi-year</tspan>
+      <tspan x="40" dy="38">earnings compounding. Apple Intelligence opens</tspan>
+      <tspan x="40" dy="38">a new device upgrade cycle. Cash returns</tspan>
+      <tspan x="40" dy="38">($25B/qtr buybacks) provide a floor."</tspan>
+      <tspan x="40" dy="60" font-weight="700" fill="#0E7D52">Target: $260 — 18% upside</tspan>
+    </text>
+
+    <!-- Bear card -->
+    <rect x="0" y="640" width="960" height="500" rx="24" fill="#FFFFFF" stroke="#FED7D7" stroke-width="3"/>
+    <circle cx="60" cy="700" r="34" fill="#C53030"/>
+    <text x="60" y="712" text-anchor="middle" font-size="34" font-weight="800" fill="#FFFFFF">B</text>
+    <text x="116" y="712" font-size="34" font-weight="800" fill="#0B1220">BEAR CASE</text>
+
+    <text x="40" y="780" font-size="26" fill="#0B1220">
+      <tspan x="40" dy="0">"iPhone unit growth is structurally flat.</tspan>
+      <tspan x="40" dy="38">China revenue is exposed to geopolitics and</tspan>
+      <tspan x="40" dy="38">domestic competition. App Store litigation could</tspan>
+      <tspan x="40" dy="38">trim a high-margin revenue line. Valuation</tspan>
+      <tspan x="40" dy="38">already prices in optimistic scenarios."</tspan>
+      <tspan x="40" dy="60" font-weight="700" fill="#C53030">Target: $185 — 16% downside</tspan>
+    </text>
+  </g>
+</svg>

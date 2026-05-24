@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+    <linearGradient id="proCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="540" fill="url(#header)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" fill="#FFFFFF">
+    <text x="540" y="220" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Go PRO</text>
+    <text x="540" y="320" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">$9.99 / month</text>
+    <text x="540" y="420" text-anchor="middle" font-size="36" font-weight="400" opacity="0.95">Unlimited analyses · Cancel anytime</text>
+  </g>
+
+  <rect x="0" y="540" width="1080" height="1380" fill="#FAFAFB"/>
+
+  <!-- PRO offer card -->
+  <g transform="translate(60, 660)" font-family="Roboto, Arial, sans-serif">
+    <rect x="0" y="0" width="960" height="700" rx="40" fill="url(#proCard)"/>
+
+    <text x="480" y="120" text-anchor="middle" font-size="48" font-weight="800" fill="#FFFFFF">Unlimited Stock Analyses</text>
+    <text x="480" y="180" text-anchor="middle" font-size="28" font-weight="400" fill="#FFFFFF" opacity="0.9">Premium AI research, on demand</text>
+
+    <text x="480" y="310" text-anchor="middle" font-size="100" font-weight="800" fill="#FFFFFF">$9.99</text>
+    <text x="480" y="360" text-anchor="middle" font-size="28" font-weight="500" fill="#FFFFFF" opacity="0.9">per month, auto-renews</text>
+
+    <!-- Feature list -->
+    <g transform="translate(80, 420)" fill="#FFFFFF" font-size="28">
+      <g>
+        <circle cx="20" cy="14" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+        <path d="M11,14 L17,20 L29,8" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="60" y="22">Unlimited analyses (no daily caps)</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <circle cx="20" cy="14" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+        <path d="M11,14 L17,20 L29,8" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="60" y="22">S&amp;P 500 + NASDAQ 100 coverage</text>
+      </g>
+      <g transform="translate(0, 120)">
+        <circle cx="20" cy="14" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+        <path d="M11,14 L17,20 L29,8" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="60" y="22">Streaming responses, instant insight</text>
+      </g>
+      <g transform="translate(0, 180)">
+        <circle cx="20" cy="14" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+        <path d="M11,14 L17,20 L29,8" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="60" y="22">Cancel anytime in Google Play</text>
+      </g>
+    </g>
+
+    <!-- Subscribe button -->
+    <rect x="80" y="900" width="800" height="120" rx="60" fill="#FFFFFF"/>
+    <text x="480" y="975" text-anchor="middle" font-size="40" font-weight="800" fill="#0E7D52">Subscribe</text>
+  </g>
+</svg>

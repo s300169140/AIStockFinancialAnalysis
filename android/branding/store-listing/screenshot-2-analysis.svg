@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="540" fill="url(#header)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" fill="#FFFFFF">
+    <text x="540" y="220" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Wall Street</text>
+    <text x="540" y="320" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Quality Analysis</text>
+    <text x="540" y="420" text-anchor="middle" font-size="36" font-weight="400" opacity="0.95">10-section reports streamed in seconds</text>
+  </g>
+
+  <rect x="0" y="540" width="1080" height="1380" fill="#FAFAFB"/>
+
+  <!-- Simulated analysis screen -->
+  <g transform="translate(60, 620)" font-family="Roboto, Arial, sans-serif">
+    <!-- Top bar -->
+    <rect x="0" y="0" width="960" height="100" rx="0" fill="#FFFFFF"/>
+    <text x="40" y="66" font-size="40" font-weight="700" fill="#0B1220">← AAPL</text>
+    <text x="920" y="66" text-anchor="end" font-size="26" fill="#4A5562">2 left</text>
+
+    <!-- Analysis content -->
+    <text x="0" y="180" font-size="42" font-weight="800" fill="#0B1220">1. Wall Street Analysis</text>
+
+    <text x="0" y="248" font-size="30" fill="#0B1220" font-weight="700">Apple Inc. (AAPL) — Senior Equity Research</text>
+
+    <text x="0" y="318" font-size="28" fill="#0B1220">
+      <tspan x="0" dy="0">Apple operates as a vertically integrated consumer</tspan>
+      <tspan x="0" dy="40">electronics and services company. Revenue is</tspan>
+      <tspan x="0" dy="40">primarily driven by iPhone (~52% of FY revenue),</tspan>
+      <tspan x="0" dy="40">supplemented by high-margin Services (~25%) and</tspan>
+      <tspan x="0" dy="40">Wearables/Home/Accessories (~10%).</tspan>
+    </text>
+
+    <text x="0" y="610" font-size="36" font-weight="800" fill="#0B1220">Competitive moat: Strong (9/10)</text>
+    <text x="0" y="666" font-size="28" fill="#4A5562">
+      <tspan x="0" dy="0">Switching costs, ecosystem lock-in, brand premium,</tspan>
+      <tspan x="0" dy="40">and >2B installed-device base produce defensible</tspan>
+      <tspan x="0" dy="40">pricing power.</tspan>
+    </text>
+
+    <text x="0" y="850" font-size="36" font-weight="800" fill="#0B1220">Industry trends</text>
+    <text x="0" y="906" font-size="28" fill="#4A5562">
+      <tspan x="0" dy="0">• Premiumization in emerging markets</tspan>
+      <tspan x="0" dy="40">• Services ARPU expansion</tspan>
+      <tspan x="0" dy="40">• AI on-device positioning vs cloud incumbents</tspan>
+      <tspan x="0" dy="40">• Regulatory scrutiny of App Store fees</tspan>
+    </text>
+
+    <!-- Streaming indicator -->
+    <g transform="translate(0, 1180)">
+      <circle cx="14" cy="14" r="8" fill="#1FB37C"/>
+      <circle cx="14" cy="14" r="14" fill="#1FB37C" opacity="0.3"/>
+      <text x="44" y="22" font-size="24" fill="#4A5562">Streaming…</text>
+    </g>
+  </g>
+</svg>

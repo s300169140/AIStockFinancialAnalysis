@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B5A3D"/>
+      <stop offset="1" stop-color="#0E7D52"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle diagonal highlight -->
+  <path d="M0,0 L1024,0 L0,500 Z" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- Background gridlines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5">
+    <line x1="40"  y1="180" x2="1024" y2="180"/>
+    <line x1="40"  y1="260" x2="1024" y2="260"/>
+    <line x1="40"  y1="340" x2="1024" y2="340"/>
+  </g>
+
+  <!-- Decorative candlestick chart on the right -->
+  <g transform="translate(620, 80)">
+    <!-- Bar 1 -->
+    <rect x="0"   y="240" width="34" height="60" rx="5" fill="#FFFFFF" opacity="0.45"/>
+    <line x1="17" y1="220" x2="17" y2="320" stroke="#FFFFFF" stroke-width="3" opacity="0.45"/>
+    <!-- Bar 2 -->
+    <rect x="68"  y="200" width="34" height="80" rx="5" fill="#FFFFFF" opacity="0.6"/>
+    <line x1="85" y1="180" x2="85" y2="300" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+    <!-- Bar 3 -->
+    <rect x="136" y="150" width="34" height="106" rx="5" fill="#FFFFFF" opacity="0.78"/>
+    <line x1="153" y1="124" x2="153" y2="278" stroke="#FFFFFF" stroke-width="3" opacity="0.78"/>
+    <!-- Bar 4 -->
+    <rect x="204" y="96"  width="34" height="140" rx="5" fill="#FFFFFF"/>
+    <line x1="221" y1="74" x2="221" y2="258" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Bar 5 -->
+    <rect x="272" y="40"  width="34" height="180" rx="5" fill="#FFFFFF"/>
+    <line x1="289" y1="20" x2="289" y2="244" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Trend line -->
+    <polyline points="17,270 85,240 153,200 221,150 289,90 380,40"
+              fill="none" stroke="#FFFFFF" stroke-width="10"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrowhead -->
+    <polygon points="380,40 354,28 360,58" fill="#FFFFFF"/>
+
+    <!-- Data dots -->
+    <g fill="#FFFFFF">
+      <circle cx="17" cy="270" r="7"/>
+      <circle cx="85" cy="240" r="7"/>
+      <circle cx="153" cy="200" r="7"/>
+      <circle cx="221" cy="150" r="7"/>
+      <circle cx="289" cy="90" r="7"/>
+    </g>
+  </g>
+
+  <!-- Left-side text -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" fill="#FFFFFF">
+    <text x="60" y="160" font-size="64" font-weight="800" letter-spacing="-1.5">AI Stock</text>
+    <text x="60" y="230" font-size="64" font-weight="800" letter-spacing="-1.5">Analysis</text>
+
+    <text x="60" y="290" font-size="22" font-weight="500" opacity="0.95">
+      Wall Street–grade research, on demand.
+    </text>
+    <text x="60" y="320" font-size="22" font-weight="500" opacity="0.95">
+      500+ US stocks · 10-section reports · AI-powered.
+    </text>
+
+    <!-- Pill badges -->
+    <g transform="translate(60, 365)">
+      <rect x="0"   y="0" width="120" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.18"/>
+      <text x="60"  y="28" text-anchor="middle" font-size="16" font-weight="600">S&amp;P 500</text>
+
+      <rect x="135" y="0" width="150" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.18"/>
+      <text x="210" y="28" text-anchor="middle" font-size="16" font-weight="600">NASDAQ-100</text>
+
+      <rect x="300" y="0" width="100" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.18"/>
+      <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="600">Streaming</text>
+    </g>
+  </g>
+</svg>

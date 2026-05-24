@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E7D52"/>
+      <stop offset="1" stop-color="#1FB37C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Header band -->
+  <rect width="1080" height="540" fill="url(#header)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" fill="#FFFFFF">
+    <text x="540" y="220" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">500+ Stocks.</text>
+    <text x="540" y="320" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-2">Instant Analysis.</text>
+    <text x="540" y="420" text-anchor="middle" font-size="36" font-weight="400" opacity="0.95">Search any S&amp;P 500 or NASDAQ-100 ticker</text>
+  </g>
+
+  <!-- White background for phone UI -->
+  <rect x="0" y="540" width="1080" height="1380" fill="#FAFAFB"/>
+
+  <!-- Simulated app shell -->
+  <g transform="translate(60, 620)">
+    <!-- Trial banner -->
+    <rect x="0" y="0" width="960" height="140" rx="20" fill="#D7F5E6"/>
+    <text x="40" y="62" font-family="Roboto,Arial,sans-serif" font-size="32" font-weight="700" fill="#0E7D52">3 of 3 free analyses left</text>
+    <text x="40" y="108" font-family="Roboto,Arial,sans-serif" font-size="24" fill="#0E7D52" opacity="0.85">Upgrade for unlimited</text>
+    <rect x="760" y="40" width="160" height="62" rx="14" fill="#0E7D52"/>
+    <text x="840" y="82" text-anchor="middle" font-family="Roboto,Arial,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF">Upgrade</text>
+
+    <!-- Search bar -->
+    <rect x="0" y="180" width="960" height="100" rx="50" fill="#FFFFFF" stroke="#E6EAF0" stroke-width="2"/>
+    <circle cx="60" cy="230" r="14" fill="none" stroke="#9AA4B0" stroke-width="3"/>
+    <line x1="71" y1="241" x2="84" y2="254" stroke="#9AA4B0" stroke-width="3" stroke-linecap="round"/>
+    <text x="110" y="245" font-family="Roboto,Arial,sans-serif" font-size="30" fill="#0B1220" font-weight="500">AAPL</text>
+    <text x="210" y="245" font-family="Roboto,Arial,sans-serif" font-size="30" fill="#9AA4B0">Search SPY 500 + NASDAQ 100</text>
+
+    <!-- Ticker rows -->
+    <g font-family="Roboto,Arial,sans-serif" font-size="40" font-weight="600" fill="#0B1220">
+      <rect x="0" y="320" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="392">AAPL</text>
+      <text x="900" y="392" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">Apple Inc.</text>
+      <line x1="0" y1="440" x2="960" y2="440" stroke="#EEF1F5" stroke-width="2"/>
+
+      <rect x="0" y="440" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="512">NVDA</text>
+      <text x="900" y="512" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">NVIDIA Corp.</text>
+      <line x1="0" y1="560" x2="960" y2="560" stroke="#EEF1F5" stroke-width="2"/>
+
+      <rect x="0" y="560" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="632">MSFT</text>
+      <text x="900" y="632" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">Microsoft Corp.</text>
+      <line x1="0" y1="680" x2="960" y2="680" stroke="#EEF1F5" stroke-width="2"/>
+
+      <rect x="0" y="680" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="752">GOOGL</text>
+      <text x="900" y="752" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">Alphabet Inc.</text>
+      <line x1="0" y1="800" x2="960" y2="800" stroke="#EEF1F5" stroke-width="2"/>
+
+      <rect x="0" y="800" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="872">META</text>
+      <text x="900" y="872" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">Meta Platforms</text>
+      <line x1="0" y1="920" x2="960" y2="920" stroke="#EEF1F5" stroke-width="2"/>
+
+      <rect x="0" y="920" width="960" height="120" fill="#FFFFFF"/>
+      <text x="40" y="992">TSLA</text>
+      <text x="900" y="992" text-anchor="end" font-size="34" font-weight="400" fill="#1FB37C">Tesla, Inc.</text>
+    </g>
+  </g>
+</svg>
